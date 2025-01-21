@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background">
+    <div class="overlay">
+      <!-- First Slide -->
+      <div class="content" id="slide1">
+        <h1 class="question">Will you be my Valentine?</h1>
+        <div class="buttons">
+          <button class="valentine-button" id="yesButton1">Yes</button>
+          <button class="valentine-button" id="yesButton2">Yes</button>
+        </div>
+      </div>
+
+      <!-- Second Slide -->
+      <div class="content hidden" id="slide2">
+        <h1 class="question">Are you sure?</h1>
+        <div class="buttons">
+          <button class="valentine-button" id="sureButton">Yes</button>
+        </div>
+      </div>
+
+      <!-- Final Slide -->
+      <div class="content hidden" id="slide3">
+        <h1 class="final-message">Lets dirty fuck, I love you Reet! ❤️</h1>
+        <canvas id="confettiCanvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <audio id="backgroundMusic" loop>
+    <source src="assets/music/TheSmiths-ThereIsALightThatNeverGoesOut.mp3" type="audio/mp3">
+  </audio>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>

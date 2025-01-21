@@ -1,0 +1,88 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Full-Screen Background */
+.background {
+  background: url('./assets/images/reet.jpg') no-repeat center center/cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content Styling */
+.content {
+  text-align: center;
+  color: #fff;
+}
+
+.question {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+/* Hidden Slides */
+.hidden {
+  display: none;
+}
+
+.final-message {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  color: #ff758c;
+}
+
+/* Button Styling */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.valentine-button {
+  padding: 20px 50px;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #ff758c;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 117, 140, 0.6);
+}
+
+.valentine-button:hover {
+  background: #ff4a6e;
+  transform: scale(1.1);
+}
+
+/* Confetti Canvas */
+#confettiCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
